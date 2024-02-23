@@ -36,10 +36,11 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false">Dropdown</a>
+                   aria-expanded="false">${sessionScope.user.fullName != null ? sessionScope.user.fullName:'Taif khoan'}</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="#">Action 1</a>
-                    <a class="dropdown-item" href="#">Action 2</a>
+                    <a class="dropdown-item" href="/register">Register</a>
+                    <a class="dropdown-item" href="/login">Login</a>
+                    <a class="dropdown-item" href="/logout">Logout</a>
                 </div>
             </li>
         </ul>
