@@ -42,11 +42,16 @@
                         <td>${item.bookName}</td>
                         <td>${item.price}</td>
                         <td>${item.author}</td>
-                        <td></td>
+                        <td>
+                            <a href="/eidt-book/${item.id}" class="btn btn-primary" >Edit</a>
+                            <a class="btn btn-danger" href="/delete-book/${item.id}"
+                               onclick="return confirm('Bạn chắc chắn chứ')" >Delete</a>
+                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>
             </table>
+            <a class="btn btn-primary" href="/add-books" role="button">Them mới</a>
         </div>
     </div>
 </div>
